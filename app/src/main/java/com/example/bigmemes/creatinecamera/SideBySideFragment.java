@@ -21,4 +21,6 @@ public class SideBySideFragment extends Fragment{
         myView  = inflater.inflate(R.layout.side_by_side_layout,container,false);
         return myView;
     }
+
+
 }
