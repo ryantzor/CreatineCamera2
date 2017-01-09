@@ -26,7 +26,8 @@
         android:layout_marginLeft="5dp"
         android:layout_weight="1"
         android:src="@drawable/Happy_smiley_face"
-        android:background="#000">
+        android:background="#000">'
+        
     </ImageView>
 
 </LinearLayout>
