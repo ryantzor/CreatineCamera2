@@ -1,29 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical" android:layout_width="wrap_content"
     android:layout_height="match_parent">
 
+
+
+
     <ImageView
-        android:id="@+id/leftPicture"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="0dp"
-        android:layout_marginTop="20dp"
+        android:id="@+id/topPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:src="@drawable/Happy_smiley_face"
+        android:src="@drawable/happy_smiley_face"
         android:background="#000">
     </ImageView>
 
     <ImageView
-        android:id="@+id/rightPicture"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="20dp"
+           android:id="@+id/bottomPicture"
+        android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
         android:layout_weight="1"
-        android:src="@drawable/Happy_smiley_face"
-        android:background="#000">'
-        
+        android:src="@drawable/happy_smiley_face"
+        android:background="#000"
+        android:layout_width="wrap_content"
+        android:cropToPadding="false"
+        android:adjustViewBounds="false">
     </ImageView>
 
 </LinearLayout>
