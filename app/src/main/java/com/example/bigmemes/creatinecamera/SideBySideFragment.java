@@ -17,12 +17,24 @@ import static android.content.Context.MODE_PRIVATE;
 
 public class SideBySideFragment extends Fragment{
 
+
     View myView;
+
+
+
+
+
+
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         //launch the side by side fragment
         myView  = inflater.inflate(R.layout.side_by_side_layout,container,false);
 
+        //add the image view objects
+        ImageView topPicture = (ImageView) myView.findViewById(R.id.topPicture);
+        ImageView bottomPicture = (ImageView) myView.findViewById(R.id.bottomPicture);
+
+        //create boolean to determine if this is the first time the user has launched the app
         boolean firstboot = getActivity().getSharedPreferences("BOOT_PREF", MODE_PRIVATE).getBoolean("firstboot",true);
 
         if (firstboot){
@@ -39,12 +51,23 @@ public class SideBySideFragment extends Fragment{
                     .apply();
         }
 
+        topPicture.setOnClickListener(imgPickListener);
 
-        //add the image view objects
-        ImageView topPicture = (ImageView) myView.findViewById(R.id.topPicture);
-        ImageView bottomPicture = (ImageView) myView.findViewById(R.id.bottomPicture);
+
+
         return myView;
     }
+
+
+    private View.OnClickListener imgPickListener = new View.OnClickListener(){
+        public void onClick(View v){
+            //dostuff
+/*            Intent intent = new Intent(getActivity(), ImagePickerActivity.class);
+            startActivityForResult(intent, );*/
+
+
+        }
+    };
 
 
 
