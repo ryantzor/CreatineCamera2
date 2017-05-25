@@ -11,7 +11,7 @@ import android.view.ViewGroup;
  * Created by Ryan Mitchell Tuller on 12/13/2016.
  */
 
-public class Notification_Center_Fragment extends Fragment{
+public class NotificationCenterFragment extends Fragment{
 
     View myView;
 

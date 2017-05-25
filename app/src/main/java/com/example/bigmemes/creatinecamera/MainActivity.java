@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.notification_center_layout) {
             fragmentManager.beginTransaction()
                     .replace(R.id.content_main,
-                            new Notification_Center_Fragment())
+                            new NotificationCenterFragment())
                     .commit();
         } else if (id == R.id.dank_meme_layout) {
             fragmentManager.beginTransaction()
